@@ -54,11 +54,21 @@ a:hover {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   color: var(--text);
   font-size: 1.05rem;
   font-weight: 800;
   letter-spacing: -0.02em;
   text-decoration: none;
+}
+
+.brand-logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .nav-links {
@@ -189,6 +199,8 @@ h1 {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   padding: 26px;
 }
 
@@ -198,6 +210,7 @@ h1 {
 }
 
 .card p {
+  flex: 1;
   margin: 0 0 18px;
   color: var(--muted);
 }
